@@ -1,0 +1,8 @@
+! Title: Freezen21 Personal Allowlist
+! Last modified: 09.05.2026
+! Version: 1.0.0
+! ===========================================
+
+@@||api.amazonalexa.com^
+@@||api.eu.amazonalexa.com^
+@@||alexa.amazon.de^
