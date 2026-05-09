@@ -3,6 +3,80 @@
 ! Version: 1.0.0
 ! ===========================================
 
+! --- Setup & Account-Authentifizierung ---
+! Ohne diese kann Alexa nicht eingerichtet werden
 @@||api.amazonalexa.com^
 @@||api.eu.amazonalexa.com^
 @@||alexa.amazon.de^
+@@||alexa.amazon.com^
+@@||pitangui.amazon.com^
+@@||layla.amazon.com^
+
+
+! --- Alexa Voice Service (AVS) ---
+! Sprachverarbeitung - DAS Kernstück
+@@||avs-alexa-eu.amazon.com^
+@@||avs-alexa-na.amazon.com^
+@@||avs-alexa-19-eu.amazon.com^
+@@||avs-alexa-14-na.amazon.com^
+
+
+! --- Voice Service Platform (VSP) ---
+! Verbindung Echo <-> Amazon Server
+! Bestätigt kritisch für EU-Geräte
+@@||vsp-alexa-eu.amazon.com^
+@@||vsp-alexa-na.amazon.com^
+
+
+! --- Geräte-Routing & Dispatch ---
+@@||bob.amazon.com^
+@@||bob-dispatch-prod-na.amazon.com^
+@@||bob-dispatch-prod-eu.amazon.com^
+@@||dp.amazon.com^
+@@||dp-gw-na.amazon.com^
+@@||dp-gw-eu.amazon.com^
+@@||dcape-na.amazon.com^
+@@||arcus-uswest.amazon.com^
+@@||unagi.amazon.com^
+@@||unagi-eu.amazon.com^
+
+
+! --- EU-spezifische Services ---
+@@||mas-ext-eu.amazon.com^
+@@||mads-eu.amazon.com^
+
+
+! --- Telemetrie & Zertifikate ---
+! Sind nicht "nur" Tracking - werden für Verbindungsaufbau gebraucht
+@@||device-metrics-us.amazon.com^
+@@||prod.amazoncrl.com^
+
+
+! --- Skills & Smart Home ---
+@@||skills-store.amazon.com^
+@@||latinum.amazon.com^
+
+
+! --- Voice Calling & Drop-In ---
+! Neuere Domain für Anruf-Funktionen
+@@||sip-edge.amc.amazon.dev^
+
+
+! --- Software Updates ---
+! Wichtig: nicht blocken, sonst keine Sicherheits-Updates
+@@||softwareupdates.amazon.com^
+
+
+! ===========================================
+! OPTIONAL - nur falls zusätzliche Probleme
+! ===========================================
+
+! --- Amazon Music (falls du Amazon Music nutzt) ---
+! @@||music.amazon.com^
+! @@||music.amazon.de^
+
+! --- Falls Skills/Apps nicht laden ---
+! @@||msh.amazon.com^
+
+! --- Wenn Alexa-App auf dem Handy hakt ---
+! @@||completion.amazon.com^
