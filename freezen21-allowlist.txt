@@ -1,10 +1,22 @@
+! ===========================================================
 ! Title: Freezen21 Personal Allowlist
+! Description: Whitelisting für eigene Geräte und Services
 ! Last modified: 09.05.2026
 ! Version: 1.0.0
-! ===========================================
+! ===========================================================
 
-! --- Setup & Account-Authentifizierung ---
-! Ohne diese kann Alexa nicht eingerichtet werden
+
+! ###########################################################
+! #                                                         #
+! #   SECTION 1: AMAZON ALEXA / ECHO                        #
+! #                                                         #
+! #   Region: EU (Deutschland)                              #
+! #   Geräte: Echo, Echo Show, Echo Dot                     #
+! #   Status: Aktiv                                         #
+! #                                                         #
+! ###########################################################
+
+! --- 1.1 Setup & Account-Authentifizierung ---
 @@||api.amazonalexa.com^
 @@||api.eu.amazonalexa.com^
 @@||alexa.amazon.de^
@@ -12,23 +24,17 @@
 @@||pitangui.amazon.com^
 @@||layla.amazon.com^
 
-
-! --- Alexa Voice Service (AVS) ---
-! Sprachverarbeitung - DAS Kernstück
+! --- 1.2 Alexa Voice Service (AVS) ---
 @@||avs-alexa-eu.amazon.com^
 @@||avs-alexa-na.amazon.com^
 @@||avs-alexa-19-eu.amazon.com^
 @@||avs-alexa-14-na.amazon.com^
 
-
-! --- Voice Service Platform (VSP) ---
-! Verbindung Echo <-> Amazon Server
-! Bestätigt kritisch für EU-Geräte
+! --- 1.3 Voice Service Platform (VSP) ---
 @@||vsp-alexa-eu.amazon.com^
 @@||vsp-alexa-na.amazon.com^
 
-
-! --- Geräte-Routing & Dispatch ---
+! --- 1.4 Geräte-Routing & Dispatch ---
 @@||bob.amazon.com^
 @@||bob-dispatch-prod-na.amazon.com^
 @@||bob-dispatch-prod-eu.amazon.com^
@@ -40,43 +46,28 @@
 @@||unagi.amazon.com^
 @@||unagi-eu.amazon.com^
 
-
-! --- EU-spezifische Services ---
+! --- 1.5 EU-spezifische Services ---
 @@||mas-ext-eu.amazon.com^
 @@||mads-eu.amazon.com^
 
-
-! --- Telemetrie & Zertifikate ---
-! Sind nicht "nur" Tracking - werden für Verbindungsaufbau gebraucht
+! --- 1.6 Telemetrie & Zertifikate (für Verbindung nötig) ---
 @@||device-metrics-us.amazon.com^
 @@||prod.amazoncrl.com^
 
-
-! --- Skills & Smart Home ---
+! --- 1.7 Skills & Smart Home ---
 @@||skills-store.amazon.com^
 @@||latinum.amazon.com^
 
-
-! --- Voice Calling & Drop-In ---
-! Neuere Domain für Anruf-Funktionen
+! --- 1.8 Voice Calling & Drop-In ---
 @@||sip-edge.amc.amazon.dev^
 
-
-! --- Software Updates ---
-! Wichtig: nicht blocken, sonst keine Sicherheits-Updates
+! --- 1.9 Software Updates ---
 @@||softwareupdates.amazon.com^
 
-
-! ===========================================
-! OPTIONAL - nur falls zusätzliche Probleme
-! ===========================================
-
-! --- Amazon Music (falls du Amazon Music nutzt) ---
+! --- 1.10 Optional (bei Problemen aktivieren) ---
 ! @@||music.amazon.com^
 ! @@||music.amazon.de^
-
-! --- Falls Skills/Apps nicht laden ---
 ! @@||msh.amazon.com^
-
-! --- Wenn Alexa-App auf dem Handy hakt ---
 ! @@||completion.amazon.com^
+
+! === ENDE SECTION 1: ALEXA ===
