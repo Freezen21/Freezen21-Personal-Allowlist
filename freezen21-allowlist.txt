@@ -71,3 +71,43 @@
 ! @@||completion.amazon.com^
 
 ! === ENDE SECTION 1: ALEXA ===
+
+! ###########################################################
+! #                                                         #
+! #   SECTION 2: YOUTUBE / GOOGLE                           #
+! #                                                         #
+! #   Region: Global                                        #
+! #   Geräte/Services: YouTube Web, YouTube App             #
+! #   Status: Aktiv                                         #
+! #                                                         #
+! #   Hinweis: Diese Domains sind teils Tracking-           #
+! #   Endpoints. Ohne sie funktionieren Suchvorschläge      #
+! #   und Geräte-Sync nicht. Bewusster Trade-off.           #
+! #                                                         #
+! ###########################################################
+
+! --- 2.1 Suchvorschläge / Autocomplete ---
+@@||suggestqueries.google.com^
+@@||suggestqueries-clients6.youtube.com^
+@@||clients6.google.com^
+
+! --- 2.2 Watch History & Geräte-Sync ---
+! Ohne diese kein "Weiterschauen" zwischen Geräten
+@@||s.youtube.com^
+@@||video-stats.l.google.com^
+
+! --- 2.3 YouTube Core API ---
+! Moderne YouTube-Funktionalität (App + Web)
+@@||youtubei.googleapis.com^
+
+! --- 2.4 Google Client APIs (allgemein) ---
+! Für diverse Google-Services inkl. YouTube
+@@||clients2.google.com^
+@@||clients4.google.com^
+
+! --- 2.5 Optional (bei weiteren Problemen aktivieren) ---
+! @@||www.googleapis.com^
+! @@||accounts.google.com^
+! @@||myactivity.google.com^
+
+! === ENDE SECTION 2: YOUTUBE / GOOGLE ===
